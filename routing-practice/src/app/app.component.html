@@ -1,0 +1,14 @@
+<h1>{{ title }}</h1>
+<div>
+  <a [routerLink]="['/home']">Home</a>
+  &nbsp;
+  <a [routerLink]="['/dog']">Dog</a>
+  &nbsp;
+  <a [routerLink]="['/cat']">Cat</a>
+</div>
+<div>
+  <button type="button" (click)="getHome()">Home</button>
+  <button type="button" (click)="getDog()">Dog</button>
+  <button type="button" (click)="getCat()">Cat</button>
+</div>
+<router-outlet></router-outlet>
