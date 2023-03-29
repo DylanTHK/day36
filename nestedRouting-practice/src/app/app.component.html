@@ -1,7 +1,9 @@
 <h1> {{ title }} </h1>
 <div class="navbar">
+  <!-- routes to home component and display at router-outlet -->
   <a [routerLink]="['']">Home</a>
   &nbsp;
+  <!-- routes to path: "toplevel", display at router-outlet-->
   <a [routerLink]="['/toplevel']">Top</a>
 </div>
 <p>----- Router display below -----</p>

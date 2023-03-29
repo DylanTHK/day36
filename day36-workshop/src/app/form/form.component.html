@@ -1,0 +1,22 @@
+<h2>Weather Form</h2>
+<form [formGroup]="form" (ngSubmit)="addCity()">
+    <table>
+        <tr>
+            <td>City:</td>
+            <td>
+                <input type="text" formControlName="city">
+            </td>
+            <td>
+                <button type="submit">Add</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+<div>
+    <h3>List of Countries</h3>
+    <div *ngFor="let c of countryList; let idx=index">
+        <a (click)="getWeather(idx)">{{ c }}</a>
+    
+    </div>
+</div>
